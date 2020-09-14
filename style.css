@@ -1,0 +1,342 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+.padding_50{
+    padding:50px 0px;
+}
+.bg_gray{
+    background:#f7f7f7;
+}
+/* Start Header section  */
+.header_section{
+    background:#111;
+}
+.logo h1 {
+	font-weight: 800;
+    color: #fff;
+    position: relative;
+}
+.logo h1::before {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: -18px;
+	height: 43px;
+	width: 6px;
+	background: crimson;
+}
+.logo h1::after {
+	content: "";
+	position: absolute;
+	bottom: -8px;
+	left: -18px;
+	height: 6px;
+	width: 129px;
+	background: crimson;
+}
+.header_menu{}
+.header_menu ul{}
+.header_menu ul li {
+    padding-left: 10px;
+    display:inline-block;
+}
+.header_menu ul li a {
+	letter-spacing: 1.2px;
+	font-size: 13px;
+	font-weight: 400;
+	border: 1px solid crimson;
+	text-transform: uppercase;
+    border-radius: 3px;
+    transition:.3s;
+    display:block;
+}
+.header_menu ul li a:hover{
+    background:crimson;
+    color:#fff;
+    font-size: 15px;
+}
+/* Start Header section End  */
+/* Banner Start css  */
+.banner{
+    background: url('img/banner.JPG') no-repeat center ;
+    height:100vh;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position:center 12%;
+}
+.banner::before{
+    content:"";
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.2);
+    position: absolute;
+    z-index:-1;
+}
+.banner_text{
+    margin-top:30%;
+    text-align:center;
+}
+.banner_text h1 {
+	font-weight: 600;
+	position: relative;
+    color:transparent;
+    animation:heading_revel .5s ease forwards;
+    margin-bottom: 10px;
+}
+.banner_text h1:nth-child(1){
+    animation-delay: 1s;
+}
+.banner_text h1:nth-child(2){
+    animation-delay: 2s;
+}
+.banner_text h1:nth-child(3){
+    animation-delay: 3s;
+}
+/* .banner_text h1 span {
+	position: absolute;
+	background:#f45848;
+	width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    animation:span_reavel 1s ease forwards;
+} */
+/* .banner_text h1 span:nth-child(1){
+    animation-delay: .5s;
+}
+.banner_text h1 span:nth-child(2){
+    animation-delay: 1.5s;
+}
+.banner_text h1 span:nth-child(3){
+    animation-delay: 2.5s;
+} */
+
+@keyframes span_reavel{
+    50%{
+        width:100%;
+        left:0;
+    }
+    100%{
+        width:0;
+        left:0;
+    }
+}
+@keyframes heading_revel{
+    100%{
+        color:crimson;
+    }
+}
+.my-btn {
+	padding: 40px 0;
+}
+.dufault_btn {
+	font-size: 16px;
+	color: #fff;
+    background:crimson;
+    transition: .5s;
+}
+.dufault_btn:hover{
+    background:transparent;
+    color:#000;
+}
+/* Banner Start css End */
+/* About Me Css Start  */
+.about_us{
+    background:#f7f7f7;
+}
+.template_heading {
+	margin-top: 30px;
+	margin-bottom: 10%;
+}
+.template_heading h1 {
+	font-weight: 600;
+	position: relative;
+	display: inline;
+}
+.template_heading h1::before {
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 65%;
+	background: crimson;
+	bottom: -8%;
+	left: 13%;
+}
+.template_heading h1::after {
+	content: "";
+	position: absolute;
+	height: 10px;
+	width: 24%;
+	background: crimson;
+	bottom: -14%;
+	left: 34%;
+	border-radius: 20px;
+}
+.about_photo{
+      position: relative;
+      z-index:1;
+}
+.about_photo img {
+	border: 5px solid #fff;
+}
+.about_photo::before {
+	content: "";
+	position: absolute;
+	top: -19px;
+	left: -22px;
+	height: 113%;
+	width: 95%;
+	border: 7px solid crimson;
+	z-index: -1;
+}
+.about_text {
+	text-align: center;
+}
+.about_text h3 {
+	margin-bottom: 2px;
+	text-transform: uppercase;
+}
+.about_text h5 {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+.about_text p{}
+/* About Me Css Start End */
+/* Counter Section Css Start  */
+.counter_section{}
+.counter_text {
+	background: crimson;
+	padding: 60px;
+	box-sizing: border-box;
+	position: relative;
+}
+.counter_text::before {
+	content: "";
+	position: absolute;
+	top: -24px;
+	left: -26px;
+	height: 121%;
+	width: 97%;
+	border: 7px solid #222;
+	z-index: -1;
+}
+.counter_text_item {
+    background: #222;
+    color:#fff;
+    padding: 20px 0px;
+    border-radius: 4px;
+    border: 5px solid #fff;
+}
+.counter_text_item h2 {
+	font-size: 30px;
+	font-weight: 500;
+}
+.counter_text_item h5 {
+	font-weight: 300;
+	font-size: 20px;
+}
+/* Counter Section Css Start End */
+.service_section{}
+.service_box {
+	padding: 45px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	background: #222;
+    color: #fff;
+    margin-bottom:30px;
+}
+.service_box::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: crimson;
+	position: absolute;
+	left: 0;
+	top: -74%;
+	border-radius: 50%;
+	z-index: -1;
+}
+.service_icon {
+}
+.service_icon span{}
+.service_icon span i {
+	font-size: 50px;
+	width: 100px;
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+	background: #222;
+	color: #fff;
+    border-radius: 50%;
+    transition:.5s ease-in-out;
+}
+.service_icon span i:hover{
+    background:#fff;
+    color:#222;
+}
+.service_text{}
+.service_text h2 {
+	font-size: 25px;
+	margin: 30px 0px;
+}
+.service_text p{}
+
+/* Skill Section Css Start  */
+.skill_section{}
+.skill_text{}
+.skill_text h3 {
+	margin-bottom: 5%;
+}
+.skill_text p{}
+.skill_bar{}
+.main_bar {
+	margin-bottom: 25px;
+}
+.progress_text{}
+.progress_text .lan{
+    width:47%;
+    text-align:left;
+    display:inline-block;
+}
+
+.progress_text .per{
+    width:47%;
+    text-align:right;
+    display:inline-block;
+}
+.my_skill_item {
+	height: 10px;
+	background: #ddd;
+	margin-top: 10px;
+}
+.my_skill_item .progress-bar {
+	background: crimson;
+}
+/* Skill Section Css Start End */
+/* Footer section css  */
+.footer_section {
+	background: #222;
+	color: #fff;
+}
+.copyright {
+	padding: 20px 0px;
+}
+.copyright span {}
